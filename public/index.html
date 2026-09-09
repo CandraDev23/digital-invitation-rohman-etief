@@ -1036,10 +1036,10 @@
       });
 
       $("#data-wishes").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
-        nav: false,
-        dots: false,
+        nav: true,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
@@ -1179,139 +1179,6 @@
 
     // Panggil fungsi load saat halaman pertama kali dibuka
     loadWishes();
-  });
-</script>
-    <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-analytics.js";
-  // 1. Tambahkan import Firestore
-  import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js";
-
-  const firebaseConfig = {
-    apiKey: "AIzaSyBG60pUlNqsGJxx4CfyPWLEZ-XMsvEiMMA",
-    authDomain: "wishes-invitation-web.firebaseapp.com",
-    projectId: "wishes-invitation-web",
-    storageBucket: "wishes-invitation-web.firebasestorage.app",
-    messagingSenderId: "1035974869857",
-    appId: "1:1035974869857:web:1c8487c9afc0394fe1fb20",
-    measurementId: "G-E4HPR1TW35"
-  };
-
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-  
-  // 2. Inisialisasi database Firestore
-  const db = getFirestore(app);
-  
-  // Lanjutkan ke langkah 2 di bawah ini (masih di dalam tag script yang sama)
-  const form = document.querySelector('.wish_form');
-  const submitBtn = document.querySelector('.wish_button');
-
-  const wish = document.getElementById('wish_field');
-      const charCount = document.getElementById('char_count');
-
-if (wish && charCount) {
-  wish.addEventListener('input', () => {
-    const currentLength = wish.value.length;
-    charCount.textContent = `${currentLength} / 250`;
-    
-    // Ubah warna menjadi merah jika sudah mencapai batas maksimal
-    if (currentLength >= 250) {
-      charCount.style.color = 'red';
-    } else {
-      charCount.style.color = 'inherit'; // kembali ke warna semula
-    }
-  });
-}
-
-  document.addEventListener("DOMContentLoaded", () => {
-  // Masukkan logika form dan onSnapshot di dalam sini
-
-  const form = document.querySelector('.wish_form');
-  const submitBtn = document.querySelector('.wish_button');
-
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const name = document.getElementById('name').value;
-      const attendance = document.getElementById('attendance').value;
-      const wish = document.getElementById('wish_field').value;
-
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Mengirim...';
-      submitBtn.disabled = true;
-
-      try {
-        await addDoc(collection(db, "wishes"), {
-          name: name,
-          attendance: attendance,
-          wish: wish,
-          timestamp: serverTimestamp()
-        });
-        form.reset();
-        alert("Ucapan berhasil dikirim!");
-      } catch (error) {
-        console.error("Error menambahkan dokumen: ", error);
-        alert("Gagal mengirim ucapan.");
-      } finally {
-        submitBtn.textContent = originalText;
-        submitBtn.disabled = false;
-      }
-    });
-  }
-  const $owlContainer = $('#data-wishes');
-  const q = query(collection(db, "wishes"), orderBy("timestamp", "desc"));
-
-  onSnapshot(q, (snapshot) => {
-    let htmlContent = '';
-    
-    snapshot.forEach((doc) => {
-      const data = doc.data();
-      htmlContent += `
-        <div class="item text-start">
-          <div class="card card-comment">
-            <div class="card-body">
-              <span class="fs-4">${data.name} <span class="fs-6 text-muted">(${data.attendance})</span></span>
-              <hr class="hr-comment" />
-              <p class="isi_wish">${data.wish}</p>
-              <div class="mt-4 mb-2 w-100 text-end">
-                <img class="float-end" src="img/quote.png" alt="quote" style="width: 16%; height: auto" />
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-
-    // 1. Hancurkan carousel lama agar bersih dari memori
-    $owlContainer.trigger('destroy.owl.carousel');
-    $owlContainer.removeClass('owl-hidden');
-    $owlContainer.find('.owl-stage-outer').children().unwrap();
-    $owlContainer.removeClass('owl-center owl-loaded owl-text-select-on');
-
-    // 2. Suntikkan HTML terbaru
-    $owlContainer.html(htmlContent);
-
-    // 3. Inisialisasi ulang carousel (sesuaikan parameter ini dengan opsi Owl Carousel Anda yang sebelumnya)
-    $owlContainer.owlCarousel({
-      loop: false,
-      margin: 10,
-      nav: true,
-      autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-        600: { items: 2 },
-        1000: { items: 3 }
-      }
-    });
-  }, (error) => {
-    console.error("Error Firebase onSnapshot: ", error);
-  });
   });
 </script>
     
