@@ -38,7 +38,7 @@
           <div class="row position-relative">
             <div class="text-center position-absolute invite">
               <span>Kpd. Yth. :</span>
-              <p>Tamu Undangan</p>
+              <p id="nama-tamu">Tamu Undangan</p>
               <button
                 type="button"
                 class="btn btn-open"
@@ -1183,6 +1183,20 @@
 
     // Panggil fungsi load saat halaman pertama kali dibuka
     loadWishes();
+  });
+</script>
+
+<!-- nama tamu -->
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Membaca query parameter dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestName = urlParams.get('to');
+
+    // Jika parameter '?to=' ditemukan, timpa teks "Tamu Undangan" dengan nama tersebut
+    if (guestName) {
+      document.getElementById('nama-tamu').textContent = guestName;
+    }
   });
 </script>
     
