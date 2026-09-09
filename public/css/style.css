@@ -1,0 +1,568 @@
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+@font-face {
+  font-family: Lora;
+  src: url('../font/Lora-Regular.ttf');
+}
+
+@font-face {
+  font-family: Great Vibes;
+  src: url('../font/GreatVibes-Regular.ttf');
+}
+
+@font-face {
+  font-family: Allura;
+  src: url('../font/Allura-Regular.ttf');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+*::selection {
+  background-color: #efb8c3;
+}
+
+#popup {
+  background-image: url('../img/bg_popup.png');
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+
+#popup .container {
+  width: auto;
+  height: 50vh;
+}
+
+#popup .name {
+  left: -34%;
+  padding-top: 50px;
+  line-height: 0;
+  color:#c99e51
+}
+
+#popup .invite {
+  padding-top: 50px;
+  padding-right: 885px;
+  top: 400px;
+}
+
+#popup .invite span, #popup .invite p {
+  color: white;
+}
+
+#popup .invite p {
+  font-size: 24px;
+}
+
+#popup .nickname {
+  font-size: 140px;
+  font-family: "Great Vibes", cursive;
+}
+
+.and_inv {
+  padding-left: 60px;
+  font-size: 50px;
+  font-family: "Allura", cursive;
+}
+
+#popup span {
+  font-size: 18px;
+}
+
+.btn-open {
+  border-color: #c99e51;
+  color: #c99e51;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.btn-open:hover, .btn-open:focus {
+  background-color: transparent;
+  color: #c99e51;
+  box-shadow: 0 0 0 0.25rem #c99e51;
+}
+
+.panel-hide {
+  transform: translateY(-100%);
+  -webkit-transition: 1s linear !important;
+  -moz-transition: 1s linear !important;
+  -o-transition: 1s linear !important;
+  transition: 1s linear !important;
+}
+
+
+.left_orn {
+  left: -2px;
+  top: 100px;
+  z-index: -1;
+}
+
+.right_orn {
+  right: 0;
+  top: 100px;
+  z-index: -1;
+}
+
+.name_cover {
+  font-family: "Great Vibes", cursive;
+}
+
+.date_cover {
+  font-size: 36px;
+}
+
+.and {
+  font-family: "Allura", cursive;
+  padding-top: 54px;
+}
+
+.and_bn {
+  color: #c99e51;
+  font-family: "Allura", cursive;
+  font-size: 55px;
+  padding-top: 74px;
+}
+
+.name_people {
+  font-size: 38px;
+  color: #c99e51;
+}
+
+.date {
+  font-size: 58px;
+  line-height: 30px;
+}
+
+.time {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.line {
+  font-size: 48px;
+  line-height: 100%;
+  vertical-align: super;
+}
+
+.btn_map a {
+  text-decoration: none;
+  padding: 6px 26px;
+  background-color: #c99e51;
+  color: #0c2d1c;
+  border-radius: 20px;
+}
+
+.btn_map a:hover {
+  color: #c99e51;
+  background-color: transparent;
+  outline: #c99e51 1px solid;
+}
+
+.title_cover {
+  font-size: 36px;
+}
+
+.and {
+  font-size: 80px;
+  margin-top:-110px;
+  margin-left: 200px;
+}
+
+.name_cover {
+  font-size: 160px;
+}
+
+  /* #name_cover1 {
+    transform: translateX(-120px) translateY(-80px);
+  } */
+  #name_cover2 {
+    margin-top: -70px;
+  }
+
+#cover {
+  padding: 80px 0px;
+}
+
+#bridge_name {
+  background-color: #0c2d1c;
+}
+
+#gallery {
+  background-color: #ededed;
+}
+
+#RSVP {
+  background-color: #0c2d1c;
+}
+
+#wish {
+  background-color: #ededed;
+}
+
+#thanks {
+  background-color: #0c2d1c;
+}
+
+.hr-comment {
+  border: #0c2d1c 1px solid;
+}
+
+#bridge_name,
+#SVD,
+#gallery,
+#lovestory,
+#RSVP,
+#gift,
+#wish,
+#watchus,
+#thanks {
+  padding: 100px 200px;
+}
+
+.video_wedding {
+  height: 560px;
+}
+
+.title_SVD {
+    font-size: 28px;
+}
+
+.number_CD {
+  font-size: 60px;
+}
+
+.subbox1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/love_story.jpg);
+}
+
+.title_LS {
+  font-size: 60px;
+  line-height: 66px;
+}
+
+.isi_LS {
+  font-size: 17px;
+}
+
+.form > input,
+.form > select {
+  width: 100%;
+  padding: 2px 3px;
+  border-bottom: 1px white solid;
+  background-color: transparent;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.form > input::placeholder {
+  color: white;
+}
+
+.rsvp {
+  color: #c99e51;
+}
+.rsvp-here {
+  color: #c99e51;
+  font-size: 26px;
+}
+
+.info_RSVP {
+  color: white;
+}
+
+.rsvp_button {
+  background-color: white;
+  color: #0c2d1c;
+  border-radius: 30px;
+  padding: 10px 60px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.modal-title {
+  color: #0c2d1c;
+}
+
+.rsvp_button:hover {
+  background-color: #0c2d1c;
+  color: white;
+  outline: white 1px solid;
+  border: none;
+}
+
+.title_gift,
+.title_wish,
+.gallery_title,
+.SVD_title {
+  font-size: 50px;
+  color: #0c2d1c;
+}
+
+.card-comment {
+  border-radius: 14px;
+}
+
+.row-wish {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y:  hidden;
+}
+
+/* .item {
+  max-width: 36%;
+  padding: .55rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 36%;
+  flex-grow: 0;
+  flex-shrink: 0;
+} */
+
+.row-wish::-webkit-scrollbar {
+  display: none;
+}
+
+.gift_btn {
+  margin-top: 30px;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+  border: 2px solid #c99e51;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 0px 10px 10px #ededed;
+}
+
+.gift_btn:active {
+  box-shadow: none;
+}
+
+
+.modal-title {
+  color: white;
+}
+
+.rekening {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  padding: 30px 0px;
+}
+
+.nama_rekening {
+  font-size: 20px;
+  color: #c99e51;
+}
+
+.no_rekening {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.rekening > button {
+  background-color: #c99e51;
+  box-shadow: 0px 0px 12px 4px #ededed;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.rekening > button:hover {
+  background-color: transparent;
+  color: #c99e51;
+  outline: #c99e51 1px solid;
+}
+
+.live_button:hover > .live_ic > path {
+  fill: #0c2d1c;
+}
+
+.live_button:hover {
+  background-color: white;
+  color: #0c2d1c;
+  outline: #0c2d1c 1px solid;
+  border: none;
+  fill: #0c2d1c;
+}
+
+.wish_form > input, .wish_form > select {
+  width: 100%;
+  padding: 2px 3px;
+  border-bottom: 1px #0c2d1c solid;
+  background-color: transparent;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 40px;
+  color: #0c2d1c;
+}
+
+select option {
+  padding: 2px 3px;
+  border-bottom: 1px white solid;
+  background: transparent;
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: black;
+}
+
+select option[value="1 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="2 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="3 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="4 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="5 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="6 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="7 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+select option[value="8 Guest"] {
+  background: #0c2d1c;
+  color: white;
+}
+
+.wish_form > input::placeholder {
+  color: #0c2d1c;
+}
+
+.wish_button {
+  background-color: #0c2d1c;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 60px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.wish_button:hover {
+  background-color: #ededed;
+  color: #0c2d1c;
+  outline: #0c2d1c 1px solid;
+  border: none;
+}
+
+.title_watch {
+  font-size: 60px;
+}
+
+.live_button {
+  background-color: #0c2d1c;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 60px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+.name_tq {
+  color: #c99e51;
+  font-size: 48px;
+  font-family: "Great Vibes", cursive;
+  line-height: 34px;
+}
+
+.and_tq {
+  color: #c99e51;
+  font-family: "Allura", cursive;
+  margin-left: 50px;
+}
+
+.tq {
+  color: #c99e51;
+}
+#footer{
+  background-color: black;
+}
+.link_footer a {
+  color: #c99e51;
+  text-decoration: none;
+}
+.link_footer a:active {
+  font-weight: bold;
+}
+#btn-play button, #btn-stop button {
+  background-color: #496328;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  z-index: 9;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+}
+
+#btn-play button, #btn-stop button {
+  background-color: #0c2d1c;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  z-index: 9;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+}
+
+.and-svd {
+  font-family: "Allura", cursive;
+}

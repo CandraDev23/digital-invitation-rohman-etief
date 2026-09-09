@@ -1,0 +1,417 @@
+/* large */
+@media (min-width: 992px) and (max-width: 1199px) {
+  #popup {
+    background-image: url('../img/bg_popup_potrait.png');
+  }
+  #popup .name {
+    left: -0%;
+    padding-top: 460px;
+    line-height: 0;
+    color:#c99e51
+  }
+  #popup .invite {
+    padding-top: 640px;
+    padding-right: 0px;
+    top: 400px;
+  }
+  #popup .nickname {
+    font-size: 220px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .and_inv {
+    padding-left: 100px;
+    font-size: 80px;
+    font-family: "Allura", cursive;
+  }
+  #bridge_name,
+  #SVD,
+  #gallery,
+  #lovestory,
+  #RSVP,
+  #gift,
+  #wish,
+  #watchus,
+  #thanks {
+    padding: 50px 80px;
+  }
+  #cover {
+    padding: 80px 0px;
+  }
+  .and {
+    font-size: 50px;
+  margin-top:-90px;
+  margin-left: 180px;
+  }
+  #name_cover2 {
+      margin-top: -60px;
+    }
+  .name_cover {
+    font-size: 130px;
+  }
+  .title_cover {
+    font-size: 28px;
+  }
+  .left_orn {
+    left: -2px !important;
+    top: 60px !important;
+    width: 150px !important;
+  }
+
+  .right_orn {
+    right: 0 !important;
+    top: 60px !important;
+    width: 170px !important;
+  }
+}
+
+/* medium min-width: 768px */
+@media (min-width: 768px) and (max-width: 991px) {
+  #popup {
+    background-image: url('../img/bg_popup_potrait.png');
+  }
+  #popup .name {
+    left: -0%;
+    padding-top: 330px;
+    line-height: 0;
+    color:#c99e51
+  }
+  #popup .invite {
+    padding-top: 430px;
+    padding-right: 0px;
+    top: 400px;
+  }
+  #popup .nickname {
+    font-size: 180px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .and_inv {
+    padding-left: 100px;
+    font-size: 60px;
+    font-family: "Allura", cursive;
+  }
+  #bridge_name,
+  #SVD,
+  #gallery,
+  #lovestory,
+  #RSVP,
+  #gift,
+  #wish,
+  #watchus,
+  #thanks {
+    padding: 50px 80px;
+  }
+  .photo_BN {
+    width: 200px;
+  }
+  .name_people {
+    font-size: 30px;
+  }
+  .ortu {
+    font-size: 14px;
+  }
+  .title_SVD {
+    font-size: 36px;
+  }
+  .dayy {
+    font-size: 24px;
+  }
+  .boxxx1 {
+    margin-bottom: 28px;
+  }
+  .gallery {
+    margin-bottom: 20px;
+  }
+  .subbox1 {
+    height: 30vh;
+  }
+  .subbox2 {
+    padding: 20px 40px;
+    text-align: center;
+  }
+  .and_bn {
+    font-size: 48px;
+    padding-top: 54px;
+  }
+  .gift_btn {
+    margin-top: 10px;
+  }
+  .title_gift,
+  .title_LS,
+  .title_wish,
+  .gallery_title,
+  .SVD_title,
+  .title_watch {
+    font-size: 54px;
+    color: #0c2d1c;
+  }
+  .title_cover {
+    font-size: 24px;
+  }
+  .date_cover {
+    font-size: 24px;
+  }
+  .and {
+    font-size: 50px;
+  margin-top:-90px;
+  margin-left: 164px;
+  }
+  #name_cover2 {
+      margin-top: -50px;
+    }
+  .name_cover {
+    font-size: 120px;
+  }
+  #cover {
+    padding: 90px 0px;
+  }
+  .left_orn {
+    left: -2px !important;
+    top: 30px !important;
+    width: 130px !important;
+  }
+
+  .right_orn {
+    right: 0 !important;
+    top: 30px !important;
+    width: 150px !important;
+  }
+  .gallery_isi {
+    margin-bottom: 20px;
+  }
+  .video_wedding {
+    height: 400px;
+  }
+  .number_CD {
+    font-size: 80px;
+  }
+  .timee {
+    margin-top: 32px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .item {
+    padding: 0.2rem;
+  }
+  .cover {
+    padding: 140px 0px;
+  }
+}
+
+/* small */
+@media (min-width: 576px) and (max-width: 767px) {
+  #popup {
+    background-image: url('../img/bg_popup_potrait.png');
+  }
+  #popup .name {
+    left: -0%;
+    padding-top: 330px;
+    line-height: 0;
+    color:#c99e51
+  }
+  #popup .invite {
+    padding-top: 430px;
+    padding-right: 0px;
+    top: 400px;
+  }
+  #popup .nickname {
+    font-size: 180px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .and_inv {
+    padding-left: 100px;
+    font-size: 60px;
+    font-family: "Allura", cursive;
+  }
+  .video_wedding {
+    height: 300px;
+  }
+  .subbox1 {
+    height: 30vh;
+  }
+  .mid_ornament {
+    width: 120px;
+  }
+  .left_orn {
+    left: -2px !important;
+    top: 60px !important;
+    width: 80px !important;
+  }
+
+  .right_orn {
+    right: 0 !important;
+    top: 60px !important;
+    width: 90px !important;
+  }
+  .title_cover,
+  .date_cover {
+    font-size: 20px;
+  }
+  .and {
+    font-size: 36px;
+  margin-top:-80px;
+  margin-left: 130px;
+  }
+  #name_cover2 {
+      margin-top: -40px;
+    }
+  .name_cover {
+    font-size: 90px;
+  }
+  #cover {
+    padding: 60px 0px;
+  }
+  .photo_BN {
+    width: 160px;
+  }
+  .name_people {
+    font-size: 26px;
+  }
+  .ortu {
+    font-size: 13px;
+  }
+  .and_bn {
+    font-size: 38px;
+    padding-top: 54px;
+  }
+  .item {
+    padding: 0.1rem;
+  }
+  .title_gift,
+  .title_LS,
+  .title_wish,
+  .gallery_title,
+  .SVD_title,
+  .title_watch {
+    font-size: 42px;
+    color: #0c2d1c;
+  }
+  .cover {
+    padding: 140px 0px;
+  }
+  #bridge_name,
+  #SVD,
+  #gallery,
+  #lovestory,
+  #RSVP,
+  #gift,
+  #wish,
+  #watchus,
+  #thanks {
+    padding: 40px 10px;
+  }
+}
+
+/* x-small */
+@media (max-width: 575px) {
+  #popup {
+    background-image: url('../img/bg_popup_potrait.png');
+  }
+  #popup .name {
+    left: -0%;
+    padding-top: 200px;
+    line-height: 0;
+    color:#c99e51
+  }
+  #popup .invite {
+    padding-top: 260px;
+    padding-right: 0px;
+    top: 310px;
+  }
+  #popup .nickname {
+    font-size: 120px;
+    font-family: "Great Vibes", cursive;
+  }
+  
+  .and_inv {
+    padding-left: 70px;
+    font-size: 40px;
+    font-family: "Allura", cursive;
+  }
+  .video_wedding {
+    height: 200px;
+  }
+  .title_gift,
+  .title_LS,
+  .title_wish,
+  .gallery_title,
+  .SVD_title,
+  .title_watch {
+    font-size: 30px;
+    color: #0c2d1c;
+  }
+  .left_orn {
+    left: -2px !important;
+    top: 280px !important;
+    width: 140px !important;
+  }
+
+  .right_orn {
+    right: 0 !important;
+    top: 280px !important;
+    width: 160px !important;
+  }
+  .subbox1 {
+    height: 30vh;
+  }
+  .name_cover {
+    font-size: 100px;
+  }
+  .and {
+    font-size: 50px;
+  margin-top:-95px;
+  margin-left: 120px;
+  }
+  #name_cover2 {
+      margin-top: -40px;
+    }
+  .item {
+    padding: 0.1rem;
+  }
+  #bridge_name,
+  #SVD,
+  #gallery,
+  #lovestory,
+  #RSVP,
+  #gift,
+  #wish,
+  #watchus,
+  #thanks {
+    padding: 30px 20px;
+  }
+  .and_bn {
+    padding: 20px 0px;
+  }
+  .modal-body {
+    height: 500px;
+  }
+  .title_SVD {
+    font-size: 25px;
+  }
+  .isi_LS {
+    font-size: 12px;
+  }
+  .isi_LS {
+    font-size: 12px;
+  }
+  .rsvp-here {
+    font-size: 18px;
+  }
+  .info_RSVP {
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  option {
+    font-size: 12px;
+  }
+  .info_gift {
+    font-size: 12px;
+  }
+  .isi_wish {
+    font-size: 12px;
+  }
+}
